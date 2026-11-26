@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.581ab0a4.css",
+    "main.js": "./static/js/main.d06346ed.js",
+    "static/js/290.89bc6adf.chunk.js": "./static/js/290.89bc6adf.chunk.js",
+    "static/js/258.4ff145c0.chunk.js": "./static/js/258.4ff145c0.chunk.js",
+    "static/js/543.47283e21.chunk.js": "./static/js/543.47283e21.chunk.js",
+    "static/js/145.33551a7b.chunk.js": "./static/js/145.33551a7b.chunk.js",
+    "static/css/849.9c84cef8.chunk.css": "./static/css/849.9c84cef8.chunk.css",
+    "static/js/849.af358192.chunk.js": "./static/js/849.af358192.chunk.js",
+    "static/js/239.af599b6d.chunk.js": "./static/js/239.af599b6d.chunk.js",
+    "static/js/352.5de405a4.chunk.js": "./static/js/352.5de405a4.chunk.js",
+    "static/js/404.84d2b69a.chunk.js": "./static/js/404.84d2b69a.chunk.js",
+    "static/js/350.94bed750.chunk.js": "./static/js/350.94bed750.chunk.js",
+    "static/media/JetBrainsMono-Regular.woff2": "./static/media/JetBrainsMono-Regular.9748d9678054ab7bf013.woff2",
+    "static/media/PlusJakartaSans-latin.woff2": "./static/media/PlusJakartaSans-latin.d6578b4e85b986795c74.woff2",
+    "index.html": "./index.html"
+  },
+  "entrypoints": [
+    "static/css/main.581ab0a4.css",
+    "static/js/main.d06346ed.js"
+  ]
+}
