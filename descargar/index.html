@@ -1,74 +1,163 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f5f2e9" />
-    <meta name="description" content="Descargá Foco para Windows. Funciona sin conexión y guarda todo en tu equipo." />
-    <title>Descargar Foco — Menos ruido. Más foco.</title>
-    <link rel="icon" href="../foco-mark.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="./descargar.css" />
-  </head>
-  <body class="dl-page">
-    <header class="topbar wrap">
-      <a class="brand" href="../" aria-label="Foco, inicio">
-        <img src="../foco-mark.svg" alt="" width="34" height="40" />
-        <span>foco</span>
+<!DOCTYPE html>
+<html lang="es" class="js-motion">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F6F5F0">
+  <meta name="description" content="Descargá Tramo. 1.9 para Windows. Funciona sin conexión y guarda todo en tu equipo.">
+  <title>Descargar Tramo. — Un tramo a la vez.</title>
+  <link id="dynamic-favicon" rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none'%3E%3Crect width='64' height='64' rx='16' fill='%232D4F3E'/%3E%3Crect x='10' y='12' width='44' height='14' rx='4' fill='%23F6F5F0'/%3E%3Crect x='21' y='30' width='14' height='22' rx='4' fill='%23F6F5F0'/%3E%3Crect x='41' y='39' width='13' height='13' rx='3.5' fill='%23F6F5F0'/%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./descargar.css">
+</head>
+<body class="dl-page" data-theme="natural">
+  <header class="topbar">
+    <div class="topbar-inner wrap">
+      <a class="brand" href="../" aria-label="Tramo., inicio">
+        <span class="brand-badge" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 64 64" fill="none">
+            <rect x="10" y="12" width="44" height="14" rx="4" fill="currentColor"/>
+            <rect x="21" y="30" width="14" height="22" rx="4" fill="currentColor"/>
+            <rect x="41" y="39" width="13" height="13" rx="3.5" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand-word">Tramo<span class="brand-dot"></span></span>
       </a>
-      <a class="nav-cta" href="../"><span aria-hidden="true">←</span> Volver a la presentación</a>
-    </header>
 
-    <main>
-      <section class="dl-hero wrap">
-        <p class="eyebrow"><span class="live-dot"></span> FOCO PARA WINDOWS · <span data-dl="version">Versión 1.8.3</span></p>
-        <h1>Descargá Foco.<br /><span>Empezá sin cuenta.</span></h1>
-        <p class="dl-lead">Funciona sin conexión y guarda todo en tu equipo. No hace falta instalar nada.</p>
+      <div class="topbar-actions">
+        <div class="theme-switcher" role="group" aria-label="Aspecto visual">
+          <button type="button" class="theme-btn is-active" data-set-theme="natural" title="Natural">Natural</button>
+          <button type="button" class="theme-btn" data-set-theme="cielo" title="Cielo">Cielo</button>
+          <button type="button" class="theme-btn" data-set-theme="oscuro" title="Oscuro">Oscuro</button>
+          <button type="button" class="theme-btn" data-set-theme="calido" title="Cálido">Cálido</button>
+          <button type="button" class="theme-btn" data-set-theme="oceano" title="Océano">Océano</button>
+        </div>
 
-        <div class="dl-options dl-single">
-          <article class="dl-card dl-card-main">
+        <a class="nav-cta" href="../">
+          <span aria-hidden="true">←</span> Volver a la presentación
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="dl-hero wrap">
+      <p class="eyebrow is-visible" data-reveal="up">
+        <span class="live-dot"></span> TRAMO. PARA WINDOWS · <span data-dl="version">Versión 1.9</span>
+      </p>
+      <h1 class="is-visible" data-reveal="up">Descargá Tramo.<br><span>Empezá sin cuenta.</span></h1>
+      <p class="dl-lead is-visible" data-reveal="up">Funciona sin conexión y guarda todo en tu equipo. No hace falta instalar nada.</p>
+
+      <div class="dl-options dl-single is-visible" data-reveal="up">
+        <article class="dl-card dl-card-main">
+          <div class="folder-tab" aria-hidden="true"></div>
+          <div class="dl-card-header">
             <span class="status-pill"><i></i> Windows 10 u 11 · 64 bits</span>
-            <h2>Foco para Windows</h2>
-            <p>Un archivo .zip con la aplicación lista para usar. Lo descomprimís en cualquier carpeta y abrís Foco.exe, sin instalar nada.</p>
-            <a class="button button-primary" data-dl="app" href="#" download>Descargar Foco <span aria-hidden="true">↓</span></a>
-            <dl class="dl-facts">
-              <div><dt>Tamaño</dt><dd data-dl="app-size">153 MB</dd></div>
-              <div><dt>Archivo</dt><dd data-dl="app-name">—</dd></div>
-            </dl>
-            <button type="button" class="hash-toggle" data-dl="hash-app">Ver huella SHA-256</button>
-            <code class="hash" hidden data-dl="app-hash"></code>
-          </article>
-        </div>
+            <span class="version-tag">v1.9</span>
+          </div>
 
-        <p class="dl-alert" data-dl="error" role="alert" hidden>La descarga todavía no está disponible. Probá de nuevo en un rato.</p>
-        <p class="dl-alert dl-alert-soft" data-dl="platform" hidden>Foco está disponible solo para Windows por ahora.</p>
-      </section>
+          <h2>Tramo. para Windows</h2>
+          <p>Un archivo .zip con la aplicación lista para usar. Lo descomprimís en cualquier carpeta y abrís <b>Tramo.exe</b>, sin instalar nada.</p>
 
-      <section class="dl-steps wrap" aria-labelledby="steps-title">
-        <h2 id="steps-title">Tres pasos y listo</h2>
-        <ol>
-          <li><span>1</span><div><h3>Descargá</h3><p>Bajá el archivo .zip de Foco.</p></div></li>
-          <li><span>2</span><div><h3>Descomprimilo</h3><p>Clic derecho → <b>Extraer todo…</b> y elegí una carpeta. Después abrí <b>Foco.exe</b>.</p></div></li>
-          <li><span>3</span><div><h3>Entrá a Foco</h3><p>La primera vez aparece una bienvenida. Cerrala con <b>Entrar a Foco</b>.</p></div></li>
-        </ol>
-      </section>
+          <div class="dl-cta-row">
+            <a class="button button-primary" data-dl="app" href="https://github.com/gonzzaarias/foco-app/releases/download/v1.9/Tramo-1.9-Windows-x64.zip" download="Tramo-1.9-Windows-x64.zip">
+              Descargar Tramo. <span aria-hidden="true">↓</span>
+            </a>
+          </div>
 
-      <section class="dl-info wrap">
-        <div class="dl-box">
-          <h3>Requisitos</h3>
-          <ul><li>Windows 10 u 11, 64 bits</li><li>Sin internet, cuenta ni clave</li><li>Tus datos quedan en tu computadora</li></ul>
-        </div>
-        <div class="dl-box dl-box-warm">
-          <h3>Si Windows muestra una advertencia</h3>
-          <p>Foco todavía no tiene firma de editor, por eso puede aparecer “SmartScreen”. Elegí <b>Más información → Ejecutar de todas formas</b>. Podés verificar el archivo comparando su huella SHA-256.</p>
-        </div>
-      </section>
-    </main>
+          <dl class="dl-facts">
+            <div>
+              <dt>Tamaño</dt>
+              <dd data-dl="app-size">153 MB</dd>
+            </div>
+            <div>
+              <dt>Archivo</dt>
+              <dd data-dl="app-name">Tramo-1.9-Windows-x64.zip</dd>
+            </div>
+          </dl>
 
-    <footer class="footer wrap"><a class="brand footer-brand" href="../"><img src="../foco-mark.svg" alt="" width="28" height="33" /><span>foco</span></a><span>Menos ruido. Más foco.</span><a href="../">Volver al inicio</a><small>© 2026 Foco</small></footer>
-    <script src="./download.js"></script>
-  </body>
+          <div class="hash-section">
+            <button type="button" class="hash-toggle" data-dl="hash-app" aria-expanded="false">
+              Ver huella SHA-256
+            </button>
+            <div class="hash-box" hidden>
+              <code class="hash" data-dl="app-hash">594c6adf82ffd237203120ac51d5beb7a7af95ce6aee1d67d2f58dbf56b3a1d4</code>
+              <button type="button" class="copy-hash-btn" id="copy-hash-btn">Copiar</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="dl-alert" data-dl="error" role="alert" hidden>La descarga todavía no está disponible. Probá de nuevo en un rato.</p>
+      <p class="dl-alert dl-alert-soft" data-dl="platform" hidden>Tramo. está disponible solo para Windows por ahora.</p>
+    </section>
+
+    <section class="dl-steps wrap" aria-labelledby="steps-title">
+      <h2 id="steps-title" data-reveal="up">Tres pasos y listo</h2>
+      <ol>
+        <li data-reveal="up">
+          <span class="step-num">01</span>
+          <div>
+            <h3>Descargá</h3>
+            <p>Bajá el archivo .zip de Tramo. 1.9 a tu equipo.</p>
+          </div>
+        </li>
+        <li data-reveal="up">
+          <span class="step-num">02</span>
+          <div>
+            <h3>Descomprimilo</h3>
+            <p>Clic derecho → <b>Extraer todo…</b> y elegí una carpeta. Después abrí <b>Tramo.exe</b>.</p>
+          </div>
+        </li>
+        <li data-reveal="up">
+          <span class="step-num">03</span>
+          <div>
+            <h3>Entrá a Tramo.</h3>
+            <p>La primera vez aparece una bienvenida. Cerrala con <b>Entrar a Tramo.</b>.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="dl-info wrap">
+      <div class="dl-box" data-reveal="up">
+        <h3>Requisitos</h3>
+        <ul>
+          <li>Windows 10 u 11, 64 bits</li>
+          <li>Sin internet, cuenta ni clave</li>
+          <li>Tus datos quedan en tu computadora</li>
+        </ul>
+      </div>
+      <div class="dl-box dl-box-warm" data-reveal="up">
+        <h3>Si Windows muestra una advertencia</h3>
+        <p>Tramo. todavía no tiene firma de editor, por eso puede aparecer “SmartScreen”. Elegí <b>Más información → Ejecutar de todas formas</b>. Podés verificar el archivo comparando su huella SHA-256.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <a class="brand footer-brand" href="../">
+      <span class="brand-badge brand-badge-sm" aria-hidden="true">
+        <svg width="13" height="13" viewBox="0 0 64 64" fill="none">
+          <rect x="10" y="12" width="44" height="14" rx="4" fill="currentColor"/>
+          <rect x="21" y="30" width="14" height="22" rx="4" fill="currentColor"/>
+          <rect x="41" y="39" width="13" height="13" rx="3.5" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="brand-word">Tramo<span class="brand-dot"></span></span>
+    </a>
+    <span>Un tramo a la vez.</span>
+    <a href="../">Volver al inicio</a>
+    <small>© <span id="year">2026</span> Tramo.</small>
+  </footer>
+
+  <div class="dl-toast" id="dl-toast" role="status" aria-live="polite" hidden>
+    <span class="toast-dot"></span>
+    <span>Iniciando descarga de <b>Tramo. 1.9</b> para Windows…</span>
+  </div>
+
+  <script src="./download.js"></script>
+</body>
 </html>
