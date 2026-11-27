@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /panel-tramo-99/
+
+Sitemap: https://usatramo.pages.dev/sitemap.xml
