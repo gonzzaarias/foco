@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
-<meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tramo. — Un tramo a la vez. En tu propio tramo.</title>
     <meta name="description" content="Tramo. es un espacio simple y sin conexión para ordenar tus tareas, proyectos e ideas en Windows, a tu propio ritmo.">
@@ -74,7 +75,7 @@
                     <button type="button" class="theme-pill" data-theme-btn="ocean" onclick="setTheme('ocean')">Océano</button>
                 </div>
 
-                <a class="nav-cta" href="#descargar">Descargar <span aria-hidden="true">↓</span></a>
+                <a class="nav-cta" href="./descargar/">Descargar <span aria-hidden="true">↓</span></a>
             </div>
         </div>
     </header>
@@ -90,8 +91,8 @@
                 <p class="hero-lead">Tus tareas, proyectos e ideas en un lugar tranquilo. Tramo. te ayuda a ordenar lo que importa y seguir a tu propio ritmo.</p>
 
                 <div class="hero-actions">
-                    <a class="button button-primary" href="#descargar">Descargar para Windows <span aria-hidden="true">↓</span></a>
-                    <a class="text-link" href="#modalidades">Así funciona <span aria-hidden="true">↓</span></a>
+                    <a class="button button-primary" href="./descargar/">Descargar para Windows <span aria-hidden="true">↓</span></a>
+                    <a class="text-link" href="./web/">Abrir Tramo Web <span aria-hidden="true">↗</span></a>
                 </div>
 
                 <ul class="hero-chips" aria-label="Lo esencial de Tramo.">
@@ -106,7 +107,7 @@
                 </div>
             </div>
 
-            <!-- Ventana inclinada interactiva a la derecha (como Screenshot_143.png) -->
+            <!-- Ventana inclinada interactiva a la derecha -->
             <div class="hero-art" aria-label="Vista ilustrativa e interactiva de Tramo." data-reveal="right">
                 <div class="art-glow"></div>
                 <div class="orbit orbit-one"></div>
@@ -132,7 +133,7 @@
 
                     <div class="window-content">
                         <div class="window-date">
-                            <span id="today-date">Miércoles, 25 de noviembre</span>
+                            <span id="today-date">Viernes, 27 de noviembre</span>
                             <span id="active-folder-pill" style="font-size: 0.68rem; color: var(--accent); font-weight: 700;">Todas las carpetas</span>
                         </div>
 
@@ -211,7 +212,7 @@
         </section>
 
         <!-- ======================================================================
-             MODALIDADES EN GRILLA ASIMÉTRICA BENTO (COMO SCREENSHOT_144.PNG)
+             MODALIDADES EN GRILLA ASIMÉTRICA BENTO
              ====================================================================== -->
         <section class="modes-section" id="modalidades">
             <div class="wrap modes-inner">
@@ -230,17 +231,20 @@
                         <p>Un espacio personal que funciona sin conexión. Tus datos se guardan localmente en tu equipo.</p>
                         <div class="mode-ready-actions">
                             <span class="status-pill"><i></i> Aplicación de escritorio</span>
-                            <a class="button button-primary mode-download" href="#descargar">Descargar Tramo. <span aria-hidden="true">↓</span></a>
+                            <a class="button button-primary mode-download" href="./descargar/">Descargar Tramo. <span aria-hidden="true">↓</span></a>
                         </div>
                     </article>
 
                     <!-- Tarjeta 2: Tramo Web (abajo izquierda) -->
-                    <article class="mode-card mode-soon" data-reveal="up">
+                    <article class="mode-card mode-ready" data-reveal="up">
                         <div class="mode-icon icon-web" aria-hidden="true">↗</div>
                         <p class="mode-label">DESDE EL NAVEGADOR</p>
                         <h3>Tramo Web</h3>
                         <p>La experiencia de Tramo. en una plataforma web, para entrar desde tu navegador.</p>
-                        <span class="status-pill status-planned">En preparación</span>
+                        <div class="mode-ready-actions">
+                            <span class="status-pill"><i></i> Disponible ahora</span>
+                            <a class="button button-primary mode-download" href="./web/">Abrir Tramo Web <span aria-hidden="true">↗</span></a>
+                        </div>
                     </article>
 
                     <!-- Tarjeta 3: Tramo Online (abajo derecha) -->
@@ -252,7 +256,7 @@
                         <span class="status-pill status-planned">En preparación</span>
                     </article>
 
-                    <p class="mode-footnote">Tramo Web y Tramo Online están en planificación. Las funciones de cuenta y sincronización todavía no están disponibles.</p>
+                    <p class="mode-footnote">Tramo Offline y Tramo Web ya están disponibles. Tramo Online (cuenta y sincronización en la nube) sigue en planificación.</p>
                 </div>
             </div>
         </section>
@@ -288,8 +292,7 @@
         <section class="closing wrap" id="descargar" data-reveal="up">
             <p class="eyebrow">CUANDO QUIERAS, EMPEZAMOS</p>
             <h2>Tu próximo paso<br>puede ser <span>pequeño.</span></h2>
-            <button type="button" class="button button-primary" onclick="triggerDownloadNotice()">Descargar Tramo. <span aria-hidden="true">↓</span></button>
-            <p id="download-toast" class="download-toast" role="status">Iniciando descarga de Tramo. Offline (Windows x64)...</p>
+            <a class="button button-primary" href="./descargar/">Descargar Tramo. <span aria-hidden="true">↓</span></a>
             <div class="closing-orb orb-one"></div>
             <div class="closing-orb orb-two"></div>
         </section>
@@ -317,7 +320,7 @@
             <a class="social-item" href="./novedades/">
                 <span>Novedades ↗</span>
             </a>
-            <a class="social-item" href="https://www.instagram.com/holatramo" target="_blank"  aria-label="Instagram de Tramo.">
+            <a class="social-item" href="https://www.instagram.com/holatramo" target="_blank" rel="noopener" aria-label="Instagram de Tramo.">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                     <rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5.2"></rect>
                     <circle cx="12" cy="12" r="4.1"></circle>
@@ -325,7 +328,7 @@
                 </svg>
                 <span>Instagram</span>
             </a>
-            <a class="social-item" href="https://www.tiktok.com/@tramo.app" target="_blank"  aria-label="TikTok de Tramo.">
+            <a class="social-item" href="https://www.tiktok.com/@tramo.app" target="_blank" rel="noopener" aria-label="TikTok de Tramo.">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M14.1 3.5v11.1a4.2 4.2 0 1 1-3.4-4.1v3.5a.9.9 0 1 0 0 .2V3.5h3.4c.2 2.4 1.6 4.1 4.1 4.5v3.4a9.3 9.3 0 0 1-4.1-1.6"></path>
                 </svg>
@@ -481,7 +484,7 @@
             setTheme('natural');
             renderWindowDemo();
 
-            // Fecha natural en español: "Miércoles, 25 de noviembre"
+            // Fecha natural en español: "Viernes, 27 de noviembre"
             const rawDate = new Date().toLocaleDateString('es-AR', {
                 weekday: 'long',
                 day: 'numeric',
@@ -546,14 +549,6 @@
                 });
             }
         })();
-
-        function triggerDownloadNotice() {
-            const toast = document.getElementById('download-toast');
-            if (toast) {
-                toast.classList.add('is-shown');
-                setTimeout(() => toast.classList.remove('is-shown'), 4000);
-            }
-        }
     </script>
 </body>
 </html>
